@@ -1,1 +1,101 @@
+.first{
+   background: linear-gradient(to right,#ef395b,#f14d45,#c83383,#340bae);
+}
 
+
+.second{
+   background :radial-gradient(circle, red, yellow, green);
+}
+
+
+table{
+    margin: 20px auto;
+    border-radius: 20px;
+    color: rgb(231, 221, 229);
+    font-family: 'Brush Script MT', cursive;
+}
+
+
+td{
+    width: 100px;
+    height: 100px;
+    background: rgb(105, 92, 92);
+    font-size: 60px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;  
+}
+
+
+td:hover{
+    background: #947775;
+    border-radius: 35px; 
+}
+
+
+#btn1{
+    background: #020202;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+}
+
+
+#btn2{
+    background: #050505;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+}
+
+
+#btn1:hover{
+    transform: translateY(5%);
+    background: #8263cf;
+    color: #070807;
+}
+
+
+#btn2:hover{
+    transform: translateY(5%);
+    background: #6545b6;
+    color: #020202;  
+}
+
+
+@keyframes firework-animation {
+    0% {background-color : #ff8426;}
+    25% {background-color : #fffc84;}
+    50% {background-color : #ff83f4;}
+    75% {background-color : #83b6ff;}
+    100% {background-color : #ff8426;}
+}
+
+
+@-webkit-keyframes firework-animation {
+    0% {background-color : #ff8426;}
+    25% {background-color : #fffc84;}
+    50% {background-color : #ff83f4;}
+    75% {background-color : #83b6ff;}
+    100% {background-color : #ff8426;}
+}
+
+
+.nihal {
+    z-index : 999;
+    height : 45px;
+    width : 350px;
+    border-radius : 15px;
+    animation-name : firework-animation;
+    animation-timing-function : linear;
+    animation-duration : 0.6s;
+    animation-iteration-count : infinite;  
+}
